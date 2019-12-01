@@ -1,0 +1,12 @@
+.blog-post-list{
+ display: flex;
+ flex-direction: column;
+ padding-left: 3%;
+
+ .blog-post-container{
+  .blog-post-title a{
+    color: $darkMidnightBlue;
+  }
+ }
+
+}

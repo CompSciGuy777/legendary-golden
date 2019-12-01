@@ -16,20 +16,22 @@ class BlogIndex extends React.Component {
         headerClassName={"header-container-title"}
         Title={data.site.siteMetadata.Title}
       >
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
-          return (
-            <div key={node.fields.slug} className={"blog-post-container"}>
-              <h3 className={"blog-post-title"}>
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p className={"blog-post-excerpt"}>{node.excerpt}</p>
-            </div>
-          );
-        })}
+        <div className={"blog-post-list"}>
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug;
+            return (
+              <div key={node.fields.slug} className={"blog-post-container"}>
+                <h3 className={"blog-post-title"}>
+                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                <small>{node.frontmatter.date}</small>
+                <p className={"blog-post-excerpt"}>{node.excerpt}</p>
+              </div>
+            );
+          })}
+        </div>
       </Layout>
     );
   }
