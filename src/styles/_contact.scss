@@ -1,0 +1,16 @@
+.contact{
+  .contact-title{
+    width: 100%;
+    font-family: 'Rock Salt', cursive;
+    font-size: 60px;
+    -webkit-text-stroke: 2px  $royalBlue;
+    color:white;
+    background-color:$darkCerulean;
+    padding:  0.5em 1em;
+    margin: 0;
+  }
+
+  .contact-text{
+    padding: 0.5em 1em;
+  }
+}

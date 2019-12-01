@@ -1,0 +1,15 @@
+.about{
+  .about-title{
+    font-family: 'Rock Salt', cursive;
+    font-size: 60px;
+    -webkit-text-stroke: 2px  $royalBlue;
+    color:white;
+    background-color:$darkCerulean;
+    padding:  0.5em 1em;
+    margin: 0;
+  }
+
+  .about-text{
+    padding: 0.5em 1em;
+  }
+}
